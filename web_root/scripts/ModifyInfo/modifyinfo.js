@@ -18,6 +18,6 @@
     select = $j('tr').eq(5);
     enrollmentStatusTemplate.insertAfter(select);
 
-    $j('tr').eq(-1).remove();
-    $j('tr:odd').attr({'class': 'evenRow'});
+    // Fix row coloring
+    $j('.box-round').find('tr').attr('bgcolor','');
 }());
