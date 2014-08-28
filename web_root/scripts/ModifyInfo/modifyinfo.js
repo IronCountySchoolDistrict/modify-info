@@ -18,6 +18,14 @@
     select = $j('tr').eq(5);
     enrollmentStatusTemplate.insertAfter(select);
 
+    var stuPassTemplate = $j($j('#stu-pass-template').html());
+
+    // User is in group 50, so the template was picked up by jQuery
+    if (stuPassTemplate.length > 0) {
+        select = $j('tr').eq(-2);
+        stuPassTemplate.insertAfter(select);
+    }
+
     // Fix row coloring
     $j('.box-round').find('tr').attr('bgcolor','');
 }());
