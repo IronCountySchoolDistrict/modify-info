@@ -43,7 +43,7 @@
     </tr>
 </script>
 
-~[if.security.inrole=50]
+~[if.security.inrole=50,46]
 <script type="text/template" id="stu-pass-template">
     <tr>
         <td class="bold">Plain-Text Password</td>
