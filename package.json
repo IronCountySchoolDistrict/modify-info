@@ -1,0 +1,19 @@
+{
+  "name": "modify-info",
+  "version": "1.0.0",
+  "description": "Notification System for PowerSchool",
+  "main": "",
+  "scripts": {
+    "test": "mocha-casperjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IronCountySchoolDistrict/find-me.git"
+  },
+  "author": "IronCountySchoolDistrict",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/IronCountySchoolDistrict/find-me/issues"
+  },
+  "homepage": "https://github.com/IronCountySchoolDistrict/find-me#readme"
+}
