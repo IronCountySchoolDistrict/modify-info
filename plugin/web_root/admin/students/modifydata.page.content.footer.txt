@@ -60,4 +60,4 @@
     }
 </style>
 
-<script src="<!-- @echo IMAGE_SERVER_URL -->/scripts/modify-info/main.js"></script>
+<script src="<!-- @echo IMAGE_SERVER_URL -->/modify-info/js/main.js"></script>
