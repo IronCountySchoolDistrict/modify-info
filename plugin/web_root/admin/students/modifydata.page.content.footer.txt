@@ -36,20 +36,22 @@
   </tr>
 </script>
 
-<script type="text/template" id="enrollment-status-template">
-    <tr>
-        <td class="bold">Enrollment Status<br>(0:current, -1:Preenrolled, 2:Exited)</td>
-        <td><input type="text" name="[01]enroll_status" value="" size="3"></td>
-    </tr>
-</script>
+~[if.security.inrole=50,46]
+  <script type="text/template" id="enrollment-status-template">
+      <tr>
+          <td class="bold">Enrollment Status<br>(0:current, -1:Preenrolled, 2:Exited)</td>
+          <td><input type="text" name="[01]enroll_status" value="" size="3"></td>
+      </tr>
+  </script>
+~[/if]
 
 ~[if.security.inrole=50,46]
-<script type="text/template" id="stu-pass-template">
-    <tr>
-        <td class="bold">Plain-Text Password</td>
-        <td><input class="inconsolata" type="text" name="[01]stu_pass" value="" size="20"></td>
-    </tr>
-</script>
+  <script type="text/template" id="stu-pass-template">
+      <tr>
+          <td class="bold">Plain-Text Password</td>
+          <td><input class="inconsolata" type="text" name="[01]stu_pass" value="" size="20"></td>
+      </tr>
+  </script>
 [/if]
 
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata">
@@ -60,4 +62,4 @@
     }
 </style>
 
-<script src="<!-- @echo IMAGE_SERVER_URL -->/modify-info/js/main.js"></script>
+<script src="/scripts/modify-info/js/main.js"></script>
