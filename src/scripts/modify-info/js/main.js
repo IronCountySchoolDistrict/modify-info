@@ -5,7 +5,6 @@ export default function() {
     $(() => {
         var accessTemplate = $($('#access-template').html());
         var select = $('tr').eq(-4);
-        console.log(select);
         accessTemplate.insertAfter(select);
 
         var advisorTemplate = $($('#advisor-template').html());
