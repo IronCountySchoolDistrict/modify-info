@@ -61,4 +61,14 @@
     }
 </style>
 
-<script src="/scripts/modify-info/js/main.js"></script>
+<script>
+  require.config({
+    paths: {
+      'modify': '/scripts/modify-info/js/main'
+    }
+  });
+
+  require(['modify'], (modify) => {
+    modify.default();
+  });
+</script>
