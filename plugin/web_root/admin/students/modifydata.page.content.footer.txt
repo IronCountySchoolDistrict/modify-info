@@ -65,7 +65,8 @@
   require.config({
     paths: {
       'modify': '/scripts/modify-info/js/main'
-    }
+    },
+    urlArgs: 'v1.0.1'
   });
 
   require(['modify'], (modify) => {
