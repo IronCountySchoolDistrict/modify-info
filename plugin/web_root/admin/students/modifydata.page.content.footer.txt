@@ -1,57 +1,16 @@
-<script type="text/template" id="access-template">
-    <tr>
-        <td class="bold">Bus Info (route - stop)</td>
-        <td><input type="text" name="[STUDENTS]bus_route" value=" " size=15><input type="text" name="[STUDENTS.U_STUDENTS_EXTENSION]bus_stop" value=" "
-                                                                             size=8></td>
-    </tr>
-    <tr>
-        <td class="bold">Parent Access</td>
-        <td><input class="inconsolata" type="text" name="[STUDENTS]web_id" value="" readonly="readonly"></td>
-    </tr>
-    <tr>
-        <td class="bold">Parent Password</td>
-        <td><input class="inconsolata" type="text" name="[STUDENTS]web_password" value="" readonly="readonly"></td>
-    </tr>
-    <tr>
-        <td class="bold">Student Access</td>
-        <td><input class="inconsolata" type="text" name="[STUDENTS]student_web_id" value="" readonly="readonly"></td>
-    </tr>
-    <tr>
-        <td class="bold">Student Password</td>
-        <td><input class="inconsolata" type="text" name="[STUDENTS]student_web_password" value="" readonly="readonly"></td>
-    </tr>
-</script>
-
-<script type="text/template" id="advisor-template">
-    <tr>
-        <td class="bold">Advisor</td>
-        <td><input type="text" name="[STUDENTS.U_STUDENTS_EXTENSION]advisor" value="" size="20"></td>
-    </tr>
-</script>
-
 <script type="text/template" id="nickname-template">
     <tr>
         <td class="bold">Preferred Name</td>
         <td><input type="text" name="[STUDENTS.U_STUDENTS_EXTENSION]preferred_name" value="" size="20"></td>
     </tr>
 </script>
-~[if.security.inrole=50,46]
-  <script type="text/template" id="enrollment-status-template">
-      <tr>
-          <td class="bold">Enrollment Status<br>(0:current, -1:Preenrolled, 2:Exited)</td>
-          <td><input type="text" name="[STUDENTS]enroll_status" value="" size="3"></td>
-      </tr>
-  </script>
-[/if]
+<script type="text/template" id="gender-template">
+    <tr>
+          <td class="bold">Preferred Gender</td>
+          <td><input type="select" name="[STUDENTS.U_STUDENTS_EXTENSION]preferred_gender" value="" size="3"></td>
+    </tr>
+</script>
 
-~[if.security.inrole=50,46]
-  <script type="text/template" id="stu-pass-template">
-      <tr>
-          <td class="bold">Plain-Text Password</td>
-          <td><input class="inconsolata" type="text" name="[STUDENTS.U_STUDENTS_EXTENSION]stu_pass" value="" size="20"></td>
-      </tr>
-  </script>
-[/if]
 
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata">
 

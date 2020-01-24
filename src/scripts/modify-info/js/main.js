@@ -8,17 +8,13 @@ $(() => {
     var select = modifyInfoTableRows.find('tr').eq(-2);
     accessTemplate.insertAfter(select);
 
-    var advisorTemplate = $($('#advisor-template').html());
-    select = modifyInfoTableRows.find('tr').eq(2);
-    advisorTemplate.insertAfter(select);
-
     var nicknameTemplate = $($('#nickname-template').html());
     select = modifyInfoTableRows.find('tr').eq(0);
     nicknameTemplate.insertAfter(select);
 
-    var enrollmentStatusTemplate = $($('#enrollment-status-template').html());
-    select = modifyInfoTableRows.find('tr').eq(5);
-    enrollmentStatusTemplate.insertAfter(select);
+    var genderTemplate = $($('#gender-template').html());
+    select = modifyInfoTableRows.find('tr').eq(12);
+    genderTemplate.insertAfter(select);
 
     var stuPassTemplate = $($('#stu-pass-template').html());
 
