@@ -1,6 +1,4 @@
-import * as psTasks from 'gulp4-ps-tasks'
+import gulp from 'gulp';
+import psTasks from 'gulp-ps-tasks';
 
-// Parse the exports gulp tasks from index.js
-Object.keys(psTasks).forEach(key => {
-  module.exports[key] = psTasks[key]
-})
+psTasks(gulp, __dirname);
