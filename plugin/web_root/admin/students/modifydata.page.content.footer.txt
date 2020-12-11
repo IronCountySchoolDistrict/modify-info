@@ -1,40 +1,3 @@
-<script type="text/template" id="access-template">
-    <tr>
-        <td class="bold">Bus Info (route - stop)</td>
-        <td><input type="text" name="[STUDENTS]bus_route" value=" " size=15><input type="text" name="[STUDENTS.U_STUDENTS_EXTENSION]bus_stop" value=" "
-                                                                             size=8></td>
-    </tr>
-    <tr>
-        <td class="bold">Parent Access</td>
-        <td><input class="inconsolata" type="text" name="[STUDENTS]web_id" value="" readonly="readonly"></td>
-    </tr>
-    <tr>
-        <td class="bold">Parent Password</td>
-        <td><input class="inconsolata" type="text" name="[STUDENTS]web_password" value="" readonly="readonly"></td>
-    </tr>
-    <tr>
-        <td class="bold">Student Access</td>
-        <td><input class="inconsolata" type="text" name="[STUDENTS]student_web_id" value="" readonly="readonly"></td>
-    </tr>
-    <tr>
-        <td class="bold">Student Password</td>
-        <td><input class="inconsolata" type="text" name="[STUDENTS]student_web_password" value="" readonly="readonly"></td>
-    </tr>
-</script>
-
-<script type="text/template" id="advisor-template">
-    <tr>
-        <td class="bold">Advisor</td>
-        <td><input type="text" name="[STUDENTS.U_STUDENTS_EXTENSION]advisor" value="" size="20"></td>
-    </tr>
-</script>
-
-<script type="text/template" id="nickname-template">
-    <tr>
-        <td class="bold">Preferred Name</td>
-        <td><input type="text" name="[STUDENTS.U_STUDENTS_EXTENSION]preferred_name" value="" size="20"></td>
-    </tr>
-</script>
 ~[if.security.inrole=50,46]
   <script type="text/template" id="enrollment-status-template">
       <tr>
@@ -61,14 +24,4 @@
     }
 </style>
 
-<script>
-  require.config({
-    paths: {
-      'modify': '/scripts/modify-info/js/main'
-    }
-  });
-
-  require(['modify'], (modify) => {
-    modify.default();
-  });
-</script>
+<script src="/scripts/modify-info/js/main.js"></script>

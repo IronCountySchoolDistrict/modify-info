@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<!-- start right frame -->
+<head>
+<title>~[text:psx.html.admin_students.modifydata.modify_information]</title>
+~[wc:commonscripts]
+<link href="/images/css/screen.css" rel="stylesheet" media="screen">
+<link href="/images/css/print.css" rel="stylesheet" media="print">
+</head>
+
+<body>
+
+~[wc:admin_header_frame_css]<!-- breadcrumb start --><a href="/admin/home.html" target="_top">~[text:psx.html.admin_students.modifydata.start_page]</a> &gt; <a href="home.html?selectstudent=nosearch" target="_top">~[text:psx.html.admin_students.modifydata.student_selection]</a> &gt;~[text:psx.html.admin_students.modifydata.modify_information1]<!-- breadcrumb end -->~[wc:admin_navigation_frame_css]
+
+~[wc:title_student_begin_css]~[text:psx.html.admin_students.modifydata.modify_information2]~[wc:title_student_end_css]
+
+<form action="/admin/changesrecorded.white.html" method="POST">
+<!-- start of content and bounding box -->
+<div class="box-round">
+
+~[x:assignlunchandphoneid]
+<table border="0" cellpadding="4" cellspacing="0" class="linkDescList">
+<colgroup><col><col></colgroup>
+<td class="bold">~[text:psx.html.admin_students.modifydata.family_rep]</td>
+<td><input type="checkbox" name="[01]family_rep" value="1"></td>
+</tr>
+<tr>
+        <td class="bold">Preferred Name</td>
+        <td><input type="text" name="[STUDENTS.U_STUDENTS_EXTENSION]preferred_name" value="" size="20"></td>
+    </tr>
+<tr>
+<td class="bold">~[text:psx.html.admin_students.modifydata.graduation_requirement_set]</td>
+<td><select name="[01]GradReqSetID" special="lists.gradreqset"><option></select></td>
+</tr>
+<td class="bold">~[text:psx.html.admin_students.modifydata.home_room]</td>
+<td><input type="text" name="[01]home_room" value="" size="25"></td>
+</tr>
+<tr>
+        <td class="bold">Advisor</td>
+        <td><input type="text" name="[STUDENTS.U_STUDENTS_EXTENSION]advisor" value="" size="20"></td>
+    </tr>
+<tr>
+<td class="bold">~[text:psx.html.admin_students.modifydata.locker_combination]</td>
+<td><input type="text" name="[01]locker_combination" value="" size="10"></td>
+</tr>
+<td class="bold">~[text:psx.html.admin_students.modifydata.locker_number]</td>
+<td><input type="text" name="[01]locker_number" value="" size="5"></td>
+</tr>
+<tr>
+<td class="bold">~[text:psx.html.admin_students.modifydata.lunch_id]</td>
+<td><input type="text" name="[01]lunch_id" value="" size="10"></td>
+</tr>
+<td class="bold">~[text:psx.html.admin_students.modifydata.parttime_student_indicator]</td>
+<td><input type="checkbox" name="[01]parttimestudent" value="1"></td>
+</tr>
+<tr>
+<td class="bold">~[text:psx.html.admin_students.modifydata.phone_id]</td>
+<td><input type="text" name="[01]phone_id" value="" size="10"></td>
+</tr>
+<td class="bold">~[text:psx.html.admin_students.modifydata.current_team]</td>
+<td><select name="[Students]Team" special="student.Team"><option></select></td>
+</tr>
+<tr>
+<td class="bold">~[text:psx.html.admin_students.modifydata.current_house]</td>
+<td><select name="[Students]House" special="student.House"><option></select></td>
+</tr>
+<td class="bold">~[text:psx.html.admin_students.modifydata.current_campusbuilding]</td>
+<td><select name="[Students]Building" special="student.Building"><option></select></td>
+</tr>
+<tr>
+<td class="bold">~[text:psx.html.admin_students.modifydata.track]</td>
+<td><select name="[Students]Track" special="tracks.blank"><option></select></td>
+</tr>
+<td class="bold">~[text:psx.html.admin_students.modifydata.tracker]</td>
+<td><select name="[01]Tracker"><option value=No>~[text:psx.html.admin_students.modifydata.no]<option value=Yes>~[text:psx.html.admin_students.modifydata.yes]</select></td>
+</tr>
+<tr>
+<td class="bold">~[text:psx.html.admin_students.modifydata.district_entry_date]</td>
+<td><input type="text" name="[01]DistrictEntryDate" value="" size="10"></td>
+</tr>
+<td class="bold">~[text:psx.html.admin_students.modifydata.district_entry_grade_level]</td>
+<td><input type="text" name="[01]DistrictEntryGradeLevel" value="" size="5"></td>
+</tr>
+<td class="bold">~[text:psx.html.admin_students.modifydata.school_entry_date]</td>
+<td><input type="text" name="[01]SchoolEntryDate" value="" size="10"></td>
+</tr>
+<td class="bold">~[text:psx.html.admin_students.modifydata.school_entry_grade_level]</td>
+<td><input type="text" name="[01]SchoolEntryGradeLevel" value="" size="5"></td>
+</tr>
+<tr>
+        <td class="bold">Bus Info (route - stop)</td>
+        <td><input type="text" name="[STUDENTS]bus_route" value=" " size=15><input type="text" name="[STUDENTS.U_STUDENTS_EXTENSION]bus_stop" value=" "
+                                                                             size=8></td>
+    </tr>
+ <tr>
+        <td class="bold">Parent Access</td>
+        <td><input class="inconsolata" type="text" name="[STUDENTS]web_id" value="" readonly="readonly"></td>
+    </tr>
+    <tr>
+        <td class="bold">Parent Password</td>
+        <td><input class="inconsolata" type="text" name="[STUDENTS]web_password" value="" readonly="readonly"></td>
+    </tr>
+    <tr>
+        <td class="bold">Student Access</td>
+        <td><input class="inconsolata" type="text" name="[STUDENTS]student_web_id" value="" readonly="readonly"></td>
+    </tr>
+    <tr>
+        <td class="bold">Student Password</td>
+        <td><input class="inconsolata" type="text" name="[STUDENTS]student_web_password" value="" readonly="readonly"></td>
+    </tr>
+<tr>
+<td class="bold">Plain-Text Password</td>
+<td><input type="text" name="[01]stu_pass" value="" size="20"></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><a href="modifydata.html?frn=~(frn)&assignid=yes" onclick="document.forms[0].assignids='yes'">~[text:psx.html.admin_students.modifydata.autoassign_ids_for_this_student]</a></td>
+</tr>
+</table>
+<br>
+
+<div class="button-row"><input type="hidden" name="frn" value="~(studentfrn)"><input type="hidden" name="ac" value="prim">~[submitbutton]</div>
+</div>
+<br>
+<!-- end of content of bounding box -->
+
+</form>
+~[wc:admin_footer_frame_css]
+
+</body>
+</html><!-- end right frame -->
